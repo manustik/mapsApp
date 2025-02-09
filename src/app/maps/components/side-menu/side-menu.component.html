@@ -1,4 +1,7 @@
-<ul class="list-group">
+<button class="btn" (click)="toogleMenu()">
+    <i class="bi" [class.bi-box-arrow-left]="isExpanded" [class.bi-list]="!isExpanded"></i>
+</button>
+<ul class="list-group" [ngClass]="{'minimized': !isExpanded, 'expanded': isExpanded}">
     <li *ngFor="let item of menuItems" 
         class="list-group-item"
         [routerLink]="[ item.route ]"

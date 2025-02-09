@@ -2,3 +2,13 @@ li {
     cursor: pointer;
     transition: 0.2s all;
 }
+
+.minimized {
+    transform: translateX(-150%); /* Mueve el menú completamente fuera de la vista hacia la izquierda */
+    transition: transform 0.5s ease;
+}
+
+.expanded {
+    transform: translateX(0); /* Mantiene el menú en su posición original */
+    transition: transform 0.5s ease;
+}
