@@ -10,6 +10,6 @@ export const environment = {
 };
 `;
 
-mkdirSync('./src/evironments', { recursive: true }); // Si existe se sobreescribe
+mkdirSync('./src/environments', { recursive: true }); // Si existe se sobreescribe
 
 writeFileSync( targetPath, envFileContent );
